@@ -5,7 +5,7 @@ public class Main {
         System.out.println("Welcome to Find Word Game!!!");
 
         Game game = new Game();
-        game.start();
+        game.play();
 
     }
 }

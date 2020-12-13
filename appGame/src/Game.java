@@ -9,7 +9,7 @@ public class Game {
         gameMap = new GameMap();
     }
 
-    public void start() {
+    public void play() {
 
 
     }
