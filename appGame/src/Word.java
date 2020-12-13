@@ -1,5 +1,5 @@
 public class Word {
 
-    private char[] allLetters;
+    private Letter[] allLetters;
 
 }
