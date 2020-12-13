@@ -1,5 +1,5 @@
 public class GameMap {
 
-    private Word[] allWords;
+    private Word[] allWords = new Word[11];
 
 }
