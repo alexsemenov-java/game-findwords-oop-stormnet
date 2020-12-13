@@ -6,6 +6,7 @@ public class Game {
 
     public Game() {
         player = new Player();
+        gameMap = new GameMap();
     }
 
     public void start() {
