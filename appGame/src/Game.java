@@ -11,10 +11,14 @@ public class Game {
 
     public void play() {
 
+        while (!gameOver()){
+
+        }
+
 
     }
 
     public boolean gameOver() {
-        return true;
+        return false;
     }
 }
