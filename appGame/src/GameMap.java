@@ -111,4 +111,17 @@ public class GameMap {
 
     }
 
+    public void drawGrid() {
+        for (int i = 0; i < grid.length; i++) {
+            String[] gridRow = grid[i];
+
+            for (int j = 0; j < gridRow.length; j++) {
+                System.out.println(grid[i][j]);
+            }
+
+            System.out.println("");
+
+        }
+    }
+
 }
