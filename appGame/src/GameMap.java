@@ -2,7 +2,12 @@ public class GameMap {
 
     private Word[] allWords;
 
+    private String[][] grid;
+
     public GameMap() {
+
+
+
         allWords = new Word[11];
 
         Word w1 = new Word(new Letter("т", 6, 1),
@@ -99,8 +104,8 @@ public class GameMap {
         allWords[9] = w10;
 
         Word w11 = new Word(new Letter("м", 2, 5),
-                   new Letter("э", 2, 6),
-                   new Letter("р", 2, 7));
+                            new Letter("э", 2, 6),
+                            new Letter("р", 2, 7));
 
         allWords[10] = w11;
 
