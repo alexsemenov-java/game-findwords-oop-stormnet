@@ -5,4 +5,8 @@ public class Word {
     public Word(Letter ... letters) {
         allLetters = letters;
     }
+
+    public Letter[] getAllLetters() {
+        return allLetters;
+    }
 }
