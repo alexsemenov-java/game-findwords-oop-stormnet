@@ -6,7 +6,7 @@ public class GameMap {
 
     public GameMap() {
 
-        grid = new String[9][9];
+        grid = new String[8][8];
 
         allWords = new Word[11];
 
@@ -112,16 +112,23 @@ public class GameMap {
     }
 
     public void drawGrid() {
-        for (int i = 0; i < grid.length; i++) {
+
+        System.out.println("  1  2  3  4  5  6  7  8");
+
+        for (int i = 0; i < grid.length ; i++) {
             String[] gridRow = grid[i];
 
+            System.out.print("" + (i + 1) + " ");
+
             for (int j = 0; j < gridRow.length; j++) {
+
+                grid[i][j] = "*";
                 System.out.print(grid[i][j] + "  ");
             }
 
             System.out.println("");
-
         }
+
     }
 
 }
