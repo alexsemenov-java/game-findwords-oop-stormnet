@@ -116,7 +116,7 @@ public class GameMap {
             String[] gridRow = grid[i];
 
             for (int j = 0; j < gridRow.length; j++) {
-                System.out.println(grid[i][j]);
+                System.out.print(grid[i][j]);
             }
 
             System.out.println("");
