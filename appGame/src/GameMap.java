@@ -6,7 +6,7 @@ public class GameMap {
 
     public GameMap() {
 
-
+        grid = new String[9][9];
 
         allWords = new Word[11];
 
