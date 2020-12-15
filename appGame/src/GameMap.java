@@ -113,6 +113,18 @@ public class GameMap {
 
     public void drawGrid() {
 
+        for (Word word : allWords) {
+            Letter[] allLetters = word.getAllLetters();
+
+            for (Letter letter : allLetters) {
+                int row = letter.getRow();
+                int col = letter.getCol();
+                String symbol = letter.getSymbol();
+
+                grid[row - 1][col - 1] = symbol;
+            }
+        }
+
         System.out.println("  1  2  3  4  5  6  7  8");
 
         for (int i = 0; i < grid.length ; i++) {
@@ -122,13 +134,10 @@ public class GameMap {
 
             for (int j = 0; j < gridRow.length; j++) {
 
-                grid[i][j] = "*";
                 System.out.print(grid[i][j] + "  ");
             }
 
             System.out.println("");
         }
-
     }
-
 }
