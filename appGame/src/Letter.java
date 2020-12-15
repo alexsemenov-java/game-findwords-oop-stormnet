@@ -11,4 +11,16 @@ public class Letter {
         this.row = r;
         this.col = c;
     }
+
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public int getRow() {
+        return row;
+    }
+
+    public int getCol() {
+        return col;
+    }
 }
