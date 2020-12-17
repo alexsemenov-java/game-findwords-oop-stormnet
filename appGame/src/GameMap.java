@@ -133,11 +133,19 @@ public class GameMap {
             System.out.print("" + (i + 1) + " ");
 
             for (int j = 0; j < gridRow.length; j++) {
-
                 System.out.print(grid[i][j] + "  ");
             }
 
             System.out.println("");
         }
+    }
+
+    public boolean checkWord(String playerWord){
+        for (Word word : allWords) {
+            if (word.isTheSame(playerWord)) {
+                return true;
+            }
+        }
+        return false;
     }
 }
