@@ -2,6 +2,8 @@ public class Word {
 
     private Letter[] allLetters;
 
+    private boolean found;
+
     public Word(Letter ... letters) {
         allLetters = letters;
     }
@@ -25,5 +27,13 @@ public class Word {
         }
 
         return true;
+    }
+
+    public void checkAsFound() {
+        found = true;
+    }
+
+    public boolean isFound() {
+        return found;
     }
 }
