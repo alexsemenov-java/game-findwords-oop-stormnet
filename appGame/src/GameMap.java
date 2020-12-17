@@ -122,11 +122,12 @@ public class GameMap {
 
                 if (word.isFound()) {
                     grid[row - 1][col - 1] = "*";
+                } else {
+                    String symbol = letter.getSymbol();
+                    grid[row - 1][col - 1] = symbol;
                 }
 
-                String symbol = letter.getSymbol();
 
-                grid[row - 1][col - 1] = symbol;
             }
         }
 
