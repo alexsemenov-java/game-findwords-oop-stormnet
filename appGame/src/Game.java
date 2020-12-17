@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Game {
 
     private Player player;
@@ -12,6 +14,14 @@ public class Game {
     public void play() {
 
         while (!gameOver()){
+
+            gameMap.drawGrid();
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.println("Please, enter word: ");
+
+            String playerInput = scanner.nextLine();
 
         }
 
