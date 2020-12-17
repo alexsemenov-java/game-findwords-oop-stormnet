@@ -23,6 +23,13 @@ public class Game {
 
             String playerInput = scanner.nextLine();
 
+            boolean found = gameMap.checkWord(playerInput);
+                if (found) {
+                    System.out.println("Congratulation!!! You found word!!!");
+                } else {
+                    System.out.println("Sorry, this word is not found! Please, try again...");
+                }
+
         }
 
 
