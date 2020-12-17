@@ -119,6 +119,11 @@ public class GameMap {
             for (Letter letter : allLetters) {
                 int row = letter.getRow();
                 int col = letter.getCol();
+
+                if (word.isFound()) {
+                    grid[row - 1][col - 1] = "*";
+                }
+
                 String symbol = letter.getSymbol();
 
                 grid[row - 1][col - 1] = symbol;
@@ -143,6 +148,8 @@ public class GameMap {
     public boolean checkWord(String playerWord){
         for (Word word : allWords) {
             if (word.isTheSame(playerWord)) {
+
+                word.checkAsFound();
                 return true;
             }
         }
