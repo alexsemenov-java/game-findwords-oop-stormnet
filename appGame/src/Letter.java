@@ -23,4 +23,9 @@ public class Letter {
     public int getCol() {
         return col;
     }
+
+    public boolean isTheSame(char anotherSymbol) {
+        char mySymbol = symbol.charAt(0);
+        return mySymbol == anotherSymbol;
+    }
 }
