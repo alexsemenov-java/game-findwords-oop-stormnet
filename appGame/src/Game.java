@@ -21,12 +21,11 @@ public class Game {
 
             gameMap.drawGrid();
 
-            Scanner scanner = new Scanner(System.in);
 
             System.out.println("Please, enter word: ");
 
-            String playerInput = scanner.nextLine();
 
+            String playerInput = player.makeMove();
             boolean found = gameMap.checkWord(playerInput);
             if (found) {
                     System.out.println("Congratulation!!! You found word!!!");

@@ -15,4 +15,11 @@ public class Player {
     public String getName() {
         return name;
     }
+
+    public String makeMove() {
+        Scanner scanner = new Scanner(System.in);
+        String playerInput = scanner.nextLine();
+
+        return playerInput;
+    }
 }
