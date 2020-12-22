@@ -1,5 +1,6 @@
 public class GameMap {
 
+    public static final int WORDS_COUNT = 11;
     private Word[] allWords;
 
     private String[][] grid;
@@ -8,7 +9,7 @@ public class GameMap {
 
         grid = new String[8][8];
 
-        allWords = new Word[11];
+        allWords = new Word[WORDS_COUNT];
 
         Word w1 = new Word(new Letter("т", 6, 1),
                            new Letter("а", 5, 1),
