@@ -8,12 +8,15 @@ public class Game {
 
     private String[] foundWords;
 
+    private int foundWordCount;
+
 
 
     public Game() {
         player = new Player();
         gameMap = new GameMap();
         foundWords = new String[GameMap.WORDS_COUNT];
+        foundWordCount = 0;
     }
 
     public void play() {
@@ -31,6 +34,18 @@ public class Game {
             boolean found = gameMap.checkWord(playerInput);
                 if (found) {
                     System.out.println("Congratulation!!! You found word!!!");
+
+                    foundWords[foundWordCount] = playerInput;
+                    foundWordCount++;
+
+                    System.out.println("Previously found word: ");
+
+                    for (String w : foundWords) {
+                        System.out.println(w);
+                    }
+
+                    System.out.println("***************************************");
+
                 } else {
                     System.out.println("Sorry, this word is not found! Please, try again...");
                 }
