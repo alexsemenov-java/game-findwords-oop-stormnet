@@ -1,13 +1,16 @@
 public class GameMap {
 
     public static final int WORDS_COUNT = 11;
+
+    public static final int GRID_SIZE = 8;
+
     private Word[] allWords;
 
     private String[][] grid;
 
     public GameMap() {
 
-        grid = new String[8][8];
+        grid = new String[GRID_SIZE][GRID_SIZE];
 
         allWords = new Word[WORDS_COUNT];
 
