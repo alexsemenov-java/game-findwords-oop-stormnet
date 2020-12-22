@@ -6,9 +6,14 @@ public class Game {
 
     private GameMap gameMap;
 
+    private String[] foundWords;
+
+
+
     public Game() {
         player = new Player();
         gameMap = new GameMap();
+        foundWords = new String[GameMap.WORDS_COUNT];
     }
 
     public void play() {
