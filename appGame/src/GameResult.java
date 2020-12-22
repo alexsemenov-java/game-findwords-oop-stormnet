@@ -26,4 +26,8 @@ public class GameResult {
         System.out.println("***************************************");
         System.out.println();
     }
+
+    public boolean isGameOver() {
+        return foundWordCount == GameMap.WORDS_COUNT;
+    }
 }

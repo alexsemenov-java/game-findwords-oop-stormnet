@@ -21,9 +21,7 @@ public class Game {
 
             gameMap.drawGrid();
 
-
             System.out.println("Please, enter word: ");
-
 
             String playerInput = player.makeMove();
             boolean found = gameMap.checkWord(playerInput);
@@ -40,6 +38,10 @@ public class Game {
     }
 
     public boolean gameOver() {
+        if (gameResult.isGameOver()) {
+            System.out.println("Congratulation!!! YOU WIN!!!");
+            return true;
+        }
         return false;
     }
 }
