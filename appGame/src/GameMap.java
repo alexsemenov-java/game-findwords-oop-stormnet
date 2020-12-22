@@ -120,13 +120,13 @@ public class GameMap {
                 int row = letter.getRow();
                 int col = letter.getCol();
 
+                String symbol = letter.getSymbol();
+
                 if (word.isFound()) {
-                    grid[row - 1][col - 1] = "*";
-                } else {
-                    String symbol = letter.getSymbol();
-                    grid[row - 1][col - 1] = symbol;
+                    symbol = "*";
                 }
 
+                grid[row - 1][col - 1] = symbol;
 
             }
         }
