@@ -40,7 +40,8 @@ public class Game {
 
                     System.out.println("Previously found word: ");
 
-                    for (String w : foundWords) {
+                    for (int i = 0; i < foundWordCount; i++) {
+                        String w = foundWords[i];
                         System.out.println(w);
                     }
 
